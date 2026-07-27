@@ -68,6 +68,7 @@ a:hover { text-decoration: underline; }
   padding-top: 14px;
   padding-bottom: 14px;
   position: relative;
+  max-width: 1180px;
 }
 
 .nav-brand {
@@ -105,18 +106,21 @@ a:hover { text-decoration: underline; }
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 26px;
+  gap: 20px;
   margin: 0;
   padding: 0;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .nav-links a {
   color: var(--muted);
-  font-size: 0.92rem;
+  font-size: 0.87rem;
   font-weight: 500;
   position: relative;
   padding-bottom: 3px;
+  white-space: nowrap;
 }
 .nav-links a:hover { color: var(--primary); text-decoration: none; }
 .nav-links a.active { color: var(--primary); }
